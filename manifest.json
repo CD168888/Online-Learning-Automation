@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "湖南师大公共课在线学习助手",
+  "description": "全自动完成湖南师范大学在线课程的观看、以及视频的切换，提升学习效率",
+  "version": "1.0",
+  "author": "蒋小渡",
+  "action": {},
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.ejxjy.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.ejxjy.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+} 
